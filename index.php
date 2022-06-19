@@ -4,14 +4,13 @@ define("MYPOS" , __DIR__);
 define("SLASH" ,"\\");
 
 //Дебаг режим
-$job = true;
-debug($job){
-    if($job){
+if(True){
+    
         ini_set('error_reporting', E_ALL);
         ini_set('display_errors', 1);
         ini_set('display_startup_errors', 1);    
-    }
-}
+    
+};
 
 //Автозагрузка классов.
 spl_autoload_register(function ($class_name) {   
@@ -20,5 +19,6 @@ spl_autoload_register(function ($class_name) {
     if(file_exists(MYPOS."/".$class_name . '.php')){include_once MYPOS."/".$class_name . '.php';}    
 });
 
-
+//запуск роутера
+$router = new \Mods\Router\Router;
 ?>
