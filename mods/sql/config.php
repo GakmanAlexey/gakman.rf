@@ -6,7 +6,7 @@ Class Config{
     public $detabase = "gakman";
     public $prefix = "sto_";
     public $login = "root";
-    public $pass = "";    
+    public $pass = "root";    
     public $port = "3306";
 
     
