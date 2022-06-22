@@ -45,6 +45,7 @@ Class Router{
         foreach($this->static_list["url"] as $url){
             if($url == $way[1]){
                 include $this->static_list["adress"]["$timed"];
+                die();
                 
             }
             $timed++;
